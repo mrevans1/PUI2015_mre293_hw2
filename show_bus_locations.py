@@ -11,7 +11,7 @@ if __name__ == '__main__':
     
     buses = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
     number_buses = len(buses)
-    print "Bus Line: "+ str(busline)
+    print "Bus Line : "+ str(busline)
     print "Number of Active Buses : " + str(number_buses)
     for i in range(number_buses):
         lat =  buses[i]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']
